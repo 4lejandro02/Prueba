@@ -113,15 +113,13 @@ p{
     width:100%;
     max-width:150px;
     border-radius: 50%;
-    margin: 10px
+    margin: 30px
 }
-
-
 #guarderia {
     background: #99c4f9;
     color: darkblue; 
     text-align: center;
-    padding:50px;
+    padding:40px;
 }
 #guarderia h2{
     padding:15px;
@@ -146,25 +144,81 @@ p{
     max-width:300px;
 }
 
-
 #promociones {
     background: #223bcd;
     color: #fff;
-    text-align:center;
     padding:30px;
+    text-align:center;
+
 }
 #promociones h1{
     padding:15px;
     text-transform: uppercase;
+    text-align:center;
 }
 #promociones .contenedor{
-    display:inline-flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 #promociones img{
-    width:50%;
+    width:100%;
     max-width:150px;
     border-radius: 10%;
-    margin: 10px
+    margin: 20px
+}
+.info.promocion{
+    margin: 60px;
+}
+.info-promocion img{
+    width:100px;
+    height:150px;
+    border-radius: 50%;
+    border:3px solid #000;
+}
+#ubicacion {
+    background: #99c4f9;
+    color: darkblue; 
+    text-align:center;
+    padding:50px;
+}
+#ubicacion h1{
+    position: relative;
+    left:20%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#ubicacion .contenedor{
+    display: flex;
+    padding: 35px;
+    flex-wrap: wrap;
+    justify-content: rght;
+}
+#ubicacion .contenedor iframe{
+    width:60%;
+    border-radius:2px;
+}
+#ubicacion .contenedor p{
+    padding:40px;
+    width:50%;
+    text-align: left;
+}
+
+footer{
+    background: #223bcd;
+}
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+    color:#fff;
+}
+.copy{
+    font-size: 20px;
+    pudding:20px;
+}
+.red-social a{
+    color:#fff;
 }

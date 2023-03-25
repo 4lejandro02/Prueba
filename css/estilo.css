@@ -11,16 +11,23 @@ header{
     height:50px;
     background:#223bcd;
     color:#fff;
-    position:;
+    position:fixed;
     top:0;
     left:0;
+    z-index: 100;
 }
 h1{
     float:left;
-    text-align: center;
+}
+
+header .contenedor{
+    display: table;
 }
 p{
     text-align: center;
+}
+#menu-bar{
+    display: none;
 }
 #banner{
     margin-top:0px;
@@ -32,22 +39,55 @@ p{
 }
 #banner .contenedor{
     position:absolute;
-    top:10%;
+    top:15%;
     left:60%;
     color:darkblue;
     transform:translateX(10px)translateY(10px);
+    font-family: "Poppins"sans-serif;
+}
+#banner h2{
+    font-size: 26px;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color:#fff;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 10px;
+    border: 3px solid rgb(97,4,4);
+}
+header label{
+    float:right;
+    font-size: 28px;
+    margin:6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #223bcd;
+
+    transition: all .5s;
+    transform: translateX(-100%);
 }
 .menu a{
-    display:inline-flex;
+    display:block;
     color:#fff;
     height:50px;
-    text-decoration:initial;
-    padding:22px;
-    border:0px solid #fff;
+    text-decoration:none;
+    padding:18px;
+    border:1px solid #fff;
+
 }
-.menu a:hover{
-    background:lightskyblue;
+#menu-bar:checked ~.menu{
+    transform: translateX(0%);
 }
+
 #bienvenidos h2{
     padding:15px;
     text-align: center;
@@ -55,7 +95,6 @@ p{
     background: #223bcd;
     color:#fff;
 }
-
 
 #servicios{
     background: #99c4f9;
@@ -193,7 +232,7 @@ p{
     display: flex;
     padding: 35px;
     flex-wrap: wrap;
-    justify-content: rght;
+    justify-content: left;
 }
 #ubicacion .contenedor iframe{
     width:60%;
@@ -202,7 +241,7 @@ p{
 #ubicacion .contenedor p{
     padding:40px;
     width:50%;
-    text-align: left;
+    text-align: center;
 }
 
 footer{
